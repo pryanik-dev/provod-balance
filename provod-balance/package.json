@@ -1,0 +1,17 @@
+{
+  "name": "@local/provod-balance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Real-time Provod AI balance indicator for DeepSeek Harness",
+  "exports": { ".": "./index.js", "./client": "./client.js" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  },
+  "scripts": { "proxy": "node server.js" }
+}
