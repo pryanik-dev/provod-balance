@@ -13,10 +13,26 @@
 
 ## Установка в DeepSeek Harness
 
-Установите локальный bundle через Plugin Manager или CLI:
+### macOS — установка из Release-архива
+
+Установка git URL на macOS может определить репозиторий как обычную зависимость. Используйте архив релиза:
+
+```bash
+curl -L https://github.com/pryanik-dev/provod-balance/releases/download/v1.0.0/provod-balance-v1.0.0.zip -o provod-balance.zip
+rm -rf provod-balance-install
+mkdir provod-balance-install
+unzip -o provod-balance.zip -d provod-balance-install
+
+# Если команда dsh доступна в PATH:
+dsh plugin --profile desktop add "$PWD/provod-balance-install"
+```
+
+Если `dsh` не найден, укажите распакованную папку в Harness: **Plugins → Add plugin**.
+
+### Windows / CLI
 
 ```powershell
-dsh plugin --profile desktop add https://github.com/pryanik-dev/provod-balance.git
+dsh plugin --profile desktop add C:\path\to\provod-balance
 ```
 
 После установки откройте:
