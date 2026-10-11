@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@local/provod-balance',
+  id: '@pryanik-dev/provod-balance',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
@@ -69,7 +69,7 @@ window.__ModuleLoader__.load({
     };
     return { inject: ['slots'], apply(ctx) {
       ctx.slots.inject('sidebar.settings', () => ctx.slots.register({ name: 'sidebar.settings', id: 'provod-balance', order: 20 }, BalanceIndicator));
-      ctx.slots.inject('plugins.row.config', () => ctx.slots.register({ name: 'plugins.row.config', key: '@local/provod-balance#provod-balance' }, SettingsPage));
+      ctx.slots.inject('plugins.row.config', () => ctx.slots.register({ name: 'plugins.row.config', key: '@pryanik-dev/provod-balance#provod-balance' }, SettingsPage));
     } };
   }
 });

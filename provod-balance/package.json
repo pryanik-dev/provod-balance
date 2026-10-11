@@ -1,5 +1,5 @@
 {
-  "name": "@local/provod-balance",
+  "name": "@pryanik-dev/provod-balance",
   "version": "0.1.0",
   "private": true,
   "type": "module",

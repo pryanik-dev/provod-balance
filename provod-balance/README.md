@@ -21,7 +21,7 @@ dsh plugin --profile desktop add https://github.com/pryanik-dev/provod-balance.g
 
 После установки откройте:
 
-**Plugins → @local/provod-balance → Configure**
+**Plugins → @pryanik-dev/provod-balance → Configure**
 
 Заполните название профиля, HTTPS endpoint и API-ключ, затем выберите интервал обновления.
 
